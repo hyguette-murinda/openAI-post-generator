@@ -40,6 +40,7 @@ const OPENAI_API_KEY = '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';
           type="text"
           value={title}
           onChange={(event) => setTitle(event.target.value)}
+          className="shadow border-[#FFE4E4] border-[2px] rounded w-[20%] h-[6vh] py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
         />
         <br />
         <label htmlFor="description">Description:</label>
@@ -48,6 +49,7 @@ const OPENAI_API_KEY = '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';
           type="text"
           value={description}
           onChange={(event) => setDescription(event.target.value)}
+          className="shadow border-[#FFE4E4] border-[2px] rounded w-[20%] h-[6vh] py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
         />
         <br />
         <label htmlFor="email">Email:</label>
@@ -56,6 +58,7 @@ const OPENAI_API_KEY = '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';
           type="text"
           value={email}
           onChange={(event) => setEmail(event.target.value)}
+          className="shadow border-[#FFE4E4] border-[2px] rounded w-[20%] h-[6vh] py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
         />
         <br />
         <label htmlFor="phone">Phone:</label>
@@ -64,10 +67,11 @@ const OPENAI_API_KEY = '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';
           type="text"
           value={phone}
           onChange={(event) => setPhone(event.target.value)}
+          className="shadow border-[#FFE4E4] border-[2px] rounded w-[20%] h-[6vh] py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
         />
         
         <br />
-        <button type="submit">Generate Post</button>
+        <button type="submit" className="bg-[#EF5555] hover:bg-[#f6a1a1] text-white font-bold py-2 mt-5 px-4 w-[10%] rounded focus:outline-none focus:shadow-outline">Generate Post</button>
         </form>
     )
 }
